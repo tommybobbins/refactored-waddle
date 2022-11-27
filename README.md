@@ -5,7 +5,7 @@ Google Certified Associate Cloud Engineer Revision notes
 
 RDBMS
 ====
-Cloud Spanner [Athena] Distributed Structured Data
+Cloud Spanner [Aurora] Distributed Structured Data. Does not support Point in time recovery!
 Cloud SQL (MySQL , postgres)
 
 NoSQL
@@ -24,10 +24,12 @@ Persistent Disk = [EBS]
 
 Cloud Storage
 =============
-Normal - used frequently
+Standard - used frequently
 Nearline [IA] - used monthly
 ColdLine [Glacier] - used quarterly
 Archive [Glacier deep frozen] - used yearly
+
+SNCA
 
 Uniform or Fine Grained policies can be applied across the bucket. Fine Grained apply to one or move objects, uniform apply to everything in the bucket.
 
@@ -128,6 +130,8 @@ E2 - Cost
 A2 - Accelerated GPU
 
 Pre-emptible VMS are spot instances
+ Require each member of the team to generate a new SSH key pair and to add the public key to their respective Google account. Then grant the compute.osAdminLogin role to the corresponding Google group of the operations team.
+
 
 
 IAM
@@ -145,6 +149,7 @@ Org -> Folders -> Resources
 One central billing account - Google Cloud Organisation
 Resources - move project to the Organisation
 Billing Export goes to Bigtable so can be queried using SQL.
+Moving distribtued projects into one billing project - In the GCP Console, navigate to the Resource Manage section and move all projects to the root Organization. Can then setup a billing account to manage the underlying accounts.
 Project Owner can delete project - doesn't need Organisation admin
 
 Cloud Audit Logs
