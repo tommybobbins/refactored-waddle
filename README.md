@@ -205,3 +205,7 @@ There are two querying interfaces in the Legacy Logs Viewer:
 Since Data Access audit logs are enabled for Google Cloud Storage, user-driven activities are logged in Cloud Logging. You can view these logs using the Legacy Logs Viewer.
 
 The Legacy Logs viewer can filter logs based on resources, severity, including the specific time frame you want to define. You can also restrict it to display logs about a specific user towards the five storage buckets currently under investigation.
+
+Metrics/monitoring
+===================
+Configure Metrics Scope in Cloud Monitoring. Create a new scoping project and include all GCP Projects for monitoring.
