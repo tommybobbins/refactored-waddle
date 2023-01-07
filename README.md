@@ -191,3 +191,17 @@ Cloud Audit Logs
 ================
 All Admin Activity is recoreded.
 roles/logging.privateLogViewer is the minimum account for viewing these logs.
+
+### Legacy Logs Viewer 
+
+Displays logs for a single Cloud project.
+
+There are two querying interfaces in the Legacy Logs Viewer:
+
+– The basic query interface lets you select logs from menus and has a simple search capability.
+
+– The advanced query interface lets you view log entries from multiple logs and has a more sophisticated search capability.
+
+Since Data Access audit logs are enabled for Google Cloud Storage, user-driven activities are logged in Cloud Logging. You can view these logs using the Legacy Logs Viewer.
+
+The Legacy Logs viewer can filter logs based on resources, severity, including the specific time frame you want to define. You can also restrict it to display logs about a specific user towards the five storage buckets currently under investigation.
