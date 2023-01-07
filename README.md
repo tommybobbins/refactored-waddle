@@ -66,7 +66,7 @@ Cloud App  - HTTP, e.g. python. [Elastic Beanstalk ?]
 Cloud Functions - [lambda]
 Cloud Run - Container lamba [fargate]
 
-4 Types Cloud Audit Logs
+## 4 Types Cloud Audit Logs
 =========================
 Admin Act
 Data Act
@@ -74,9 +74,16 @@ System Event
 Policy Denials
 
 Monitoing Services -> Operation Suite
-Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
 
-BIG DATA
+## Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
+
+After you have written a configuration file, you can preview the configuration before you create a deployment. Previewing a configuration lets you see the resources that Deployment Manager would create but does not actually instantiate any actual resources. The Deployment Manager service previews the configuration by:
+
+Expanding the full configuration, including any templates.
+Creating a deployment and “shell” resources.
+You can preview your configuration by using the --preview query parameter.
+
+## BIG DATA
 ========
 Cloud Data Proc             Managed Hadoop/Map Reduce/Spark/Pig/Hive
 Cloud Data Flow             Serverless Stream and Batch Processing
