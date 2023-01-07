@@ -78,7 +78,9 @@ Monitoing Services -> Operation Suite
 gcloud
 =======
 ```
-$ gcloud config set compute/zone ZONE
+$ gcloud config set compute/zone ZONE # Set default Zone
+
+$ gcloud compute reset-windows-password instance-name # Get windows credentials
 ```
 Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
 ============================
