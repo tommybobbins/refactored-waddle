@@ -66,7 +66,7 @@ Cloud App  - HTTP, e.g. python. [Elastic Beanstalk ?]
 Cloud Functions - [lambda]
 Cloud Run - Container lamba [fargate]
 
-## 4 Types Cloud Audit Logs
+4 Types Cloud Audit Logs
 =========================
 Admin Act
 Data Act
@@ -75,7 +75,8 @@ Policy Denials
 
 Monitoing Services -> Operation Suite
 
-## Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
+Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
+============================
 
 After you have written a configuration file, you can preview the configuration before you create a deployment. Previewing a configuration lets you see the resources that Deployment Manager would create but does not actually instantiate any actual resources. The Deployment Manager service previews the configuration by:
 
@@ -83,7 +84,7 @@ Expanding the full configuration, including any templates.
 Creating a deployment and “shell” resources.
 You can preview your configuration by using the --preview query parameter.
 
-## BIG DATA
+BIG DATA
 ========
 Cloud Data Proc             Managed Hadoop/Map Reduce/Spark/Pig/Hive
 Cloud Data Flow             Serverless Stream and Batch Processing
@@ -139,7 +140,34 @@ A2 - Accelerated GPU
 Pre-emptible VMS are spot instances
  Require each member of the team to generate a new SSH key pair and to add the public key to their respective Google account. Then grant the compute.osAdminLogin role to the corresponding Google group of the operations team.
 
+Load balancing
+==============
 
+### External Network TCP/UDP
+A network load balancer that distributes TCP or UDP traffic among virtual machines in the same region.
+
+### External HTTP(s)
+**Supports HTTP/HTTP(s) traffic**
+Distributes traffic for the following backend types:
+Instance groups
+Zonal network endpoint groups (NEGs)
+Serverless NEGs: One or more App Engine, Cloud Run, or Cloud Functions services
+Internet NEGs, for endpoints that are outside of Google Cloud (also known as custom origins)
+Buckets in Cloud Storage
+Scope is global
+Destination ports
+HTTP on 80 or 8080
+HTTPS on 443
+On each backend service, you can optionally enable Cloud CDN and Google Cloud Armor.
+
+
+### SSL Proxy Load Balancer
+Supports TCP with SSL offload traffic.
+**It is intended for non-HTTP(S) traffic.**
+Scope is global.
+By using SSL Proxy Load Balancing, SSL connections are terminated at the load balancing layer, and then proxied to the closest available backend.
+Destination ports
+5, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995, 1883, 3389, 5222, 5432, 5671, 5672, 5900, 5901, 6379, 8085, 8099, 9092, 9200, and 9300
 
 IAM
 ====
