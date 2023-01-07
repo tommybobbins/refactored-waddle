@@ -75,6 +75,11 @@ Policy Denials
 
 Monitoing Services -> Operation Suite
 
+gcloud
+=======
+```
+$ gcloud config set compute/zone ZONE
+```
 Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
 ============================
 
