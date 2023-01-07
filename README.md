@@ -174,6 +174,11 @@ IAM
 Principle of least privilege and multiple roles - always use predefined roles where possible
 Member accounts are associated with Google Accounts.
 
+The gcloud iam roles copy command creates a role from an existing role into an another project. For example, to create a copy of an existing role called spanner.DBAdmin into a project with PROJECT_ID, you can run:
+```
+gcloud iam roles copy –source=”roles/spanner.RoleBobbins” –destination=RoleBobbins –dest-project=curly-unicorn-12345
+```
+Recreate a role from the development project into a production project.
 
 Organisations
 =============
