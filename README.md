@@ -103,13 +103,18 @@ Lifecycle Actions
 1: Delete  - uses object versioning. 
 2: Set Storage Class - based on age/created before/custom time before etc.
 
-Managed Instance Groups [ASG]
+Managed Instance Groups - MIG [ASG]
 =======================
 Managed instance group template. Used to scale out.
 Cloud Monitoring agent can be installed on instances.
 VPC Flow logs.
 Autohealing set to healthy (HTTP)
-min_idle_instances can be used to set the size of the MIG
+min_idle_instances can be used to set the size of the MIG.
+### Reasons that Mig scaling might fail:
+
+- The boot disk already exists. By default, new boot persistent disks are created when new instances are created. Boot disk and instance have the same name upon creation. If a persistent disk already exists with that name, the request fails. To resolve this issue, you can optionally take a snapshot, and then delete the existing persistent disk. You can also set the disks.autoDelete property to True in the instance template.
+
+- The instance template is not valid. If you updated your instance template recently, there could be an invalid property that causes the managed instance group to fail VM creation.
 
 Shared VPC
 ==========
