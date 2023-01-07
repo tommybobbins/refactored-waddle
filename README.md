@@ -83,6 +83,8 @@ $ gcloud config set compute/zone ZONE # Set default Zone
 $ gcloud compute reset-windows-password instance-name # Get windows credentials
 
 $ gcloud app services set-traffic --splits #flag to set traffic splitting.
+
+$ gcloud compute networks subnets expand-ip-range NAME --prefix-length=PREFIX_LENGTH [--region=REGION] [GCLOUD_WIDE_FLAG …]
 ```
 Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
 ============================
