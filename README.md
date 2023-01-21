@@ -209,6 +209,8 @@ Resources - move project to the Organisation
 Billing Export goes to Bigtable so can be queried using SQL.
 Moving distribtued projects into one billing project - In the GCP Console, navigate to the Resource Manage section and move all projects to the root Organization. Can then setup a billing account to manage the underlying accounts.
 Project Owner can delete project - doesn't need Organisation admin
+Billing Account Administrator - can perform all Billing Account activities (creating budgets).
+Billing Account Manager - can only link Billing account to other accounts.
 
 Cloud Audit Logs
 ================
