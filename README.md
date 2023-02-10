@@ -68,10 +68,10 @@ Cloud Run - Container lamba [fargate]
 
 4 Types Cloud Audit Logs
 =========================
-Admin Act
-Data Act
-System Event
-Policy Denials
+- Admin Activity
+- Data Activity
+- System Event
+- Policy Denials
 
 Monitoing Services -> Operation Suite
 
@@ -97,11 +97,11 @@ You can preview your configuration by using the --preview query parameter.
 
 BIG DATA
 ========
-Cloud Data Proc             Managed Hadoop/Map Reduce/Spark/Pig/Hive
-Cloud Data Flow             Serverless Stream and Batch Processing
-Big Query                   Data Warehouse
-Pub/Sub                     MSK equivalent/SQS
-Cloud Data Lab              Explorer data with Python/SQL
+- Cloud Data Proc             Managed Hadoop/Map Reduce/Spark/Pig/Hive
+- Cloud Data Flow             Serverless Stream and Batch Processing
+- Big Query                   Data Warehouse
+- Pub/Sub                     MSK equivalent/SQS
+- Cloud Data Lab              Explorer data with Python/SQL
 
 Lifecycle Actions
 =================
