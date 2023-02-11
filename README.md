@@ -85,6 +85,8 @@ $ gcloud compute reset-windows-password instance-name # Get windows credentials
 $ gcloud app services set-traffic --splits #flag to set traffic splitting.
 
 $ gcloud compute networks subnets expand-ip-range NAME --prefix-length=PREFIX_LENGTH [--region=REGION] [GCLOUD_WIDE_FLAG …]
+
+$ gcloud compute reset-windows-password # command to retrieve credentials of the instance.
 ```
 Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
 ============================
