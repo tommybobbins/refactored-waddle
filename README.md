@@ -48,6 +48,18 @@ Lifecycle actions
 2: Set Storage Class based on something similar to :
    Age, Created Before, Custom time before etc.
 
+Object conditions:
+- Age
+- Created before
+- Storage class matches
+- Number of newer versions
+- Days since becoming noncurrent
+- Became noncurrent before
+- Live state
+- Days since custom time
+- Custom time before
+
+
 Managed Instance groups - [ASG]
                         - Template, scale out and scale in.
 Cloud Monitoring Agent  - [CloudWatch Agent]
