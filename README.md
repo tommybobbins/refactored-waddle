@@ -5,47 +5,46 @@ Google Certified Associate Cloud Engineer Revision notes
 
 RDBMS
 ====
-Cloud Spanner [Aurora] Distributed Structured Data. Does not support Point in time recovery!
-Cloud SQL (MySQL , postgres)
+- Cloud Spanner [Aurora] Distributed Structured Data. Does not support Point in time recovery!
+- Cloud SQL (MySQL , postgres)
 
 NoSQL
 =====
-Bigtable [DynamoDB]
-Firestore - noSQL for mobile web iot
-Firebase store and sync data
-Memorystore - Redis/Elasticache/Memcache
+- Bigtable [DynamoDB]
+- Firestore - noSQL for mobile web iot
+- Firebase store and sync data
+- Memorystore - Redis/Elasticache/Memcache
 
 Pricing calculator
 ==================
 
-Cloud Storage = [S3]
-Cloud Filestore = [EFS]/NFS
-Persistent Disk = [EBS]
+- Cloud Storage = [S3]
+- Cloud Filestore = [EFS]/NFS
+- Persistent Disk = [EBS]
 
 Cloud Storage
 =============
-Standard - used frequently
-Nearline [IA] - used monthly
-ColdLine [Glacier] - used quarterly
-Archive [Glacier deep frozen] - used yearly
+- Standard - used frequently
+- Nearline [IA] - used monthly
+- ColdLine [Glacier] - used quarterly
+- Archive [Glacier deep frozen] - used yearly
 
 SNCA
 
 Uniform or Fine Grained policies can be applied across the bucket. Fine Grained apply to one or move objects, uniform apply to everything in the bucket.
 
-Storage Object Creator has no view or delete
-Storage Object Admin has no access to manage buckets
-Storage Admin - full access.
+- Storage Object Creator has no view or delete
+- Storage Object Admin has no access to manage buckets
+- Storage Admin - full access.
 
 RetentionPolicy
 ===============
-Bucket Locking - in line with data retention policies
-Object lifecycle management - TTL for objects, move storage classes.
+- Bucket Locking - in line with data retention policies
+- Object lifecycle management - TTL for objects, move storage classes.
 
-Lifecycle actions
-1: Delete.
-
-2: Set Storage Class based on something similar to :
+Lifecycle actions:
+-  Delete.
+-  Set Storage Class based on something similar to :
    Age, Created Before, Custom time before etc.
 
 Object conditions:
@@ -62,6 +61,7 @@ Object conditions:
 
 Managed Instance groups - [ASG]
                         - Template, scale out and scale in.
+                        
 Cloud Monitoring Agent  - [CloudWatch Agent]
 
 VPC
@@ -74,9 +74,9 @@ Shared VPC - Org can conect projects, resources, resources in other VPCs.
            - 1 or more shared VPCs project attached to 1 project
 Subnets can be expanded.
 
-Cloud App  - HTTP, e.g. python. [Elastic Beanstalk ?]
-Cloud Functions - [lambda]
-Cloud Run - Container lamba [fargate]
+- Cloud App  - HTTP, e.g. python. [Elastic Beanstalk ?]
+- Cloud Functions - [lambda]
+- Cloud Run - Container lamba [fargate]
 
 4 Types Cloud Audit Logs
 =========================
@@ -105,9 +105,9 @@ Deployment Manager  - [CloudFormation]. YAML/Python/Jinja
 
 After you have written a configuration file, you can preview the configuration before you create a deployment. Previewing a configuration lets you see the resources that Deployment Manager would create but does not actually instantiate any actual resources. The Deployment Manager service previews the configuration by:
 
-Expanding the full configuration, including any templates.
-Creating a deployment and “shell” resources.
-You can preview your configuration by using the --preview query parameter.
+- Expanding the full configuration, including any templates.
+- Creating a deployment and “shell” resources.
+- You can preview your configuration by using the --preview query parameter.
 
 BIG DATA
 ========
@@ -125,10 +125,10 @@ Lifecycle Actions
 
 Managed Instance Groups - MIG [ASG]
 =======================
-Managed instance group template. Used to scale out.
-Cloud Monitoring agent can be installed on instances.
-VPC Flow logs.
-Autohealing set to healthy (HTTP)
+- Managed instance group template. Used to scale out.
+- Cloud Monitoring agent can be installed on instances.
+- VPC Flow logs.
+- Autohealing set to healthy (HTTP). Autoscaling will only allow failed instances to be restarted, Autohealing will perform service checks and spawn new instances as necessary.
 min_idle_instances can be used to set the size of the MIG.
 ### Reasons that Mig scaling might fail:
 
@@ -145,11 +145,12 @@ Project attached to just project?
 
 Loading BIG Data
 ================
-Avro
-CSV
-JSON
-ORC?
-Parquet
+- Avro
+- CSV
+- JSON
+- ORC?
+- Parquet
+
 Firestore exports in Cloud Storage
 
 Google Cloud Adoption Framework is a document describing Google's cloud philosphy for C suites/Engineers before they decide to use Google Cloud.
@@ -162,10 +163,10 @@ Customer Gateway-> VPN Cloud Gateway -> Customer/Peer Gateway
 Compute Instance Types
 ======================
 
-N2 - balanced price/performance
-M2 - High Memory
-E2 - Cost
-A2 - Accelerated GPU
+- N2 - balanced price/performance
+- M2 - High Memory
+- E2 - Cost
+- A2 - Accelerated GPU
 
 Pre-emptible VMS are spot instances
  Require each member of the team to generate a new SSH key pair and to add the public key to their respective Google account. Then grant the compute.osAdminLogin role to the corresponding Google group of the operations team.
@@ -178,25 +179,25 @@ A network load balancer that distributes TCP or UDP traffic among virtual machin
 
 ### External HTTP(s)
 **Supports HTTP/HTTP(s) traffic**
-Distributes traffic for the following backend types:
-Instance groups
-Zonal network endpoint groups (NEGs)
-Serverless NEGs: One or more App Engine, Cloud Run, or Cloud Functions services
-Internet NEGs, for endpoints that are outside of Google Cloud (also known as custom origins)
-Buckets in Cloud Storage
-Scope is global
-Destination ports
-HTTP on 80 or 8080
-HTTPS on 443
-On each backend service, you can optionally enable Cloud CDN and Google Cloud Armor.
+- Distributes traffic for the following backend types:
+- Instance groups
+- Zonal network endpoint groups (NEGs)
+- Serverless NEGs: One or more App Engine, Cloud Run, or Cloud Functions services
+- Internet NEGs, for endpoints that are outside of Google Cloud (also known as custom origins)
+- Buckets in Cloud Storage
+- Scope is global
+- Destination ports
+- HTTP on 80 or 8080
+- HTTPS on 443
+- On each backend service, you can optionally enable Cloud CDN and Google Cloud Armor.
 
 
 ### SSL Proxy Load Balancer
-Supports TCP with SSL offload traffic.
+- Supports TCP with SSL offload traffic.
 **It is intended for non-HTTP(S) traffic.**
-Scope is global.
-By using SSL Proxy Load Balancing, SSL connections are terminated at the load balancing layer, and then proxied to the closest available backend.
-Destination ports
+- Scope is global.
+- By using SSL Proxy Load Balancing, SSL connections are terminated at the load balancing layer, and then proxied to the closest available backend.
+- Destination ports
 5, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995, 1883, 3389, 5222, 5432, 5671, 5672, 5900, 5901, 6379, 8085, 8099, 9092, 9200, and 9300
 
 IAM
@@ -212,21 +213,22 @@ Recreate a role from the development project into a production project.
 
 *roles/browser* role provides read access to browse the hierarchy for a project, including the folder, organization, and IAM policy. This role doesn’t include permission to view resources in the project. Resources in GCP are organized in a hierarchy level through folders and projects. To view this hierarchy structure, at least the roles/browser role is required.
 
-Organisations
+# Organisations
 =============
 Organisation Policies can be created by the *organisation policy administrator*
 
 Organisation hierarchy
-Org -> Folders -> Resources
-One central billing account - Google Cloud Organisation
+- Org -> Folders -> Resources
+- One central billing account - Google Cloud Organisation
 Resources - move project to the Organisation
 Billing Export goes to Bigtable so can be queried using SQL.
 Moving distribtued projects into one billing project - In the GCP Console, navigate to the Resource Manage section and move all projects to the root Organization. Can then setup a billing account to manage the underlying accounts.
-Project Owner can delete project - doesn't need Organisation admin
-Billing Account Administrator - can perform all Billing Account activities (creating budgets).
-Billing Account Manager - can only link Billing account to other accounts.
+## Account Specific owners
+- Project Owner can delete project - doesn't need Organisation admin
+- Billing Account Administrator - can perform all Billing Account activities (creating budgets).
+- Billing Account Manager - can only link Billing account to other accounts.
 
-Cloud Audit Logs
+# Cloud Audit Logs
 ================
 All Admin Activity is recoreded.
 roles/logging.privateLogViewer is the minimum account for viewing these logs.
