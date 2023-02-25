@@ -213,7 +213,7 @@ Recreate a role from the development project into a production project.
 
 *roles/browser* role provides read access to browse the hierarchy for a project, including the folder, organization, and IAM policy. This role doesn’t include permission to view resources in the project. Resources in GCP are organized in a hierarchy level through folders and projects. To view this hierarchy structure, at least the roles/browser role is required.
 
-# Organisations
+Organisations
 =============
 Organisation Policies can be created by the *organisation policy administrator*
 
@@ -227,8 +227,9 @@ Moving distribtued projects into one billing project - In the GCP Console, navig
 - Project Owner can delete project - doesn't need Organisation admin
 - Billing Account Administrator - can perform all Billing Account activities (creating budgets).
 - Billing Account Manager - can only link Billing account to other accounts.
+- roles/iam.roleAdmin - provides access to all custom roles in the project.
 
-# Cloud Audit Logs
+Cloud Audit Logs
 ================
 All Admin Activity is recoreded.
 roles/logging.privateLogViewer is the minimum account for viewing these logs.
