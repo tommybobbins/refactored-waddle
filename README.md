@@ -233,6 +233,8 @@ Moving distribtued projects into one billing project - In the GCP Console, navig
 - roles/iam.roleAdmin - provides access to all custom roles in the project.
 
 While the Billing Account User role gives you the permission to link projects to the billing account, you still need to use it in combination with another role on a project level like the Project Creator so you can successfully link a project to a billing account.
+*Billing Account User* *billing account* BAUBA
+*Project Billing Manager* *organization* PBMO
 
 Cloud Audit Logs
 ================
