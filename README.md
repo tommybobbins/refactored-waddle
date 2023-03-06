@@ -5,12 +5,12 @@ Google Certified Associate Cloud Engineer Revision notes
 
 RDBMS
 ====
-- Cloud Spanner [Aurora] postgres fork Distributed Structured Data. Does not support Point in time recovery!
+- Cloud Spanner [Aurora] postgres fork Distributed Structured Data. Does not support Point in time recovery! Globally distributed.
 - Cloud SQL (MySQL , postgres)
 
 NoSQL
 =====
-- Bigtable [DynamoDB]
+- Bigtable [DynamoDB]. Not globally distributed.
 - Firestore - noSQL for mobile web iot
 - Firebase store and sync data
 - Memorystore - Redis/Elasticache/Memcache
