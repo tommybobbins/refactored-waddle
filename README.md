@@ -5,7 +5,7 @@ Google Certified Associate Cloud Engineer Revision notes
 
 RDBMS
 ====
-- Cloud Spanner [Aurora] Distributed Structured Data. Does not support Point in time recovery!
+- Cloud Spanner [Aurora] PostGres based Distributed Structured Data. Does not support Point in time recovery!
 - Cloud SQL (MySQL , postgres)
 
 NoSQL
