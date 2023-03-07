@@ -229,7 +229,7 @@ Moving distribtued projects into one billing project - In the GCP Console, navig
 - Billing Account Administrator (roles/billing.admin) - can perform all Billing Account activities (creating budgets).
 - Billing Account Manager - (roles/billing.projectManager)link/unlink Billing account to other accounts.
 - Billing Account User (roles/billing.user). Link projects to billing accounts.
-- Billing Account Viewer (roles/billing.viewer). Link billing account cost, information and transactions. 
+- Billing Account Viewer (roles/billing.viewer). View billing account cost, information and transactions. 
 - roles/iam.roleAdmin - provides access to all custom roles in the project.
 
 While the Billing Account User role gives you the permission to link projects to the billing account, you still need to use it in combination with another role on a project level like the Project Creator so you can successfully link a project to a billing account.
