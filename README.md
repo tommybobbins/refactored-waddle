@@ -85,7 +85,7 @@ Subnets can be expanded.
 - System Event
 - Policy Denials
 
-Monitoing Services -> Operation Suite
+Monitoring Services -> Operation Suite
 
 gcloud
 =======
@@ -114,7 +114,7 @@ BIG DATA
 - Cloud Data Proc             Managed Hadoop/Map Reduce/Spark/Pig/Hive
 - Cloud Data Flow             Serverless Stream and Batch Processing
 - Big Query                   Data Warehouse
-- Pub/Sub                     MSK equivalent/SQS
+- Pub/Sub                     Kafka equivalent/SQS
 - Cloud Data Lab              Explorer data with Python/SQL
 
 Lifecycle Actions
