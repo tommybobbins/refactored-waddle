@@ -258,3 +258,7 @@ The Legacy Logs viewer can filter logs based on resources, severity, including t
 Metrics/monitoring
 ===================
 Configure Metrics Scope in Cloud Monitoring. Create a new scoping project and include all GCP Projects for monitoring.
+
+Knative Serving
+===============
+knative is a serverless framework for Kubernetes
