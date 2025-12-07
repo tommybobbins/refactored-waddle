@@ -7,6 +7,7 @@ RDBMS
 ====
 - Cloud Spanner [Aurora] postgres fork Distributed Structured Data. Does not support Point in time recovery! Globally distributed.
 - Cloud SQL (MySQL , postgres)
+- AlloyDB (Postgres Compatible fast database, transactional and vector database)
 
 NoSQL
 =====
@@ -116,7 +117,6 @@ BIG DATA
 - Big Query                   Data Warehouse
 - Pub/Sub                     Kafka equivalent/SQS
 - Cloud Data Lab              Explorer data with Python/SQL
-- AlloyDB                     Postgres Compatible fast database, transactional and vector database
 - Eventarc                    Eventbus
 - Pub/Sub                     Kafka
   
