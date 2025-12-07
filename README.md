@@ -116,6 +116,10 @@ BIG DATA
 - Big Query                   Data Warehouse
 - Pub/Sub                     Kafka equivalent/SQS
 - Cloud Data Lab              Explorer data with Python/SQL
+- AlloyDB                     Postgres Compatible fast database, transactional and vector database
+- Eventarc                    Eventbus
+- Pub/Sub                     Kafka
+  
 
 Lifecycle Actions
 =================
@@ -170,6 +174,13 @@ Compute Instance Types
 
 Pre-emptible VMS are spot instances
  Require each member of the team to generate a new SSH key pair and to add the public key to their respective Google account. Then grant the compute.osAdminLogin role to the corresponding Google group of the operations team.
+
+Compute Storage Types
+=====================
+
+- Zonal Persistent Disks - Restricted to one zone
+- Regional Persistent Disk - Provisioned capacity, increase the size to increase IOPS. Data replicated across two zones
+- Global Cloud Hyperdisk - Customisable performance, better overrall IOPS
 
 Load balancing
 ==============
@@ -262,3 +273,8 @@ Configure Metrics Scope in Cloud Monitoring. Create a new scoping project and in
 Knative Serving
 ===============
 knative is a serverless framework for Kubernetes
+
+Storage
+=======
+
+Filestore - NFS backing to 100TB and 920K IOPS
